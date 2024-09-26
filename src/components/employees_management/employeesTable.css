@@ -1,0 +1,36 @@
+.heading-table{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 0.8vw;
+    max-width: 20vw;
+}
+
+.employees-table{
+    width: 100%;
+    table-layout: auto;
+}
+
+.content-table{
+    border: 1px solid #000;
+    text-align: left;
+    table-layout: auto;
+    padding: 0.8vw;
+    max-width: 20vw;
+  overflow: hidden;
+}
+
+.title{
+    background-color: #0097b2;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.employee-icon{
+    cursor: pointer;
+    height: 25px;
+    width: auto;
+}

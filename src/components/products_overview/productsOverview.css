@@ -1,0 +1,67 @@
+
+.title-products {
+    background-color: #0097b2;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.title-products p {
+    padding: 10px;
+}
+
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    /* Màu nền của nội dung chính */
+  }
+  
+  .total-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.p-total {
+    padding: 1vw;
+    border: 1px solid #000000;
+    background-color: #001D61;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .p-value {
+    background-color: #fff;
+    padding: 1vw;
+    color: #000;
+    border: 1px solid #000000;
+  
+  }
+
+.log-out {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #0097b2;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.piechart-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

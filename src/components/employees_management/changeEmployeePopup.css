@@ -1,0 +1,98 @@
+
+
+.content-change{
+   
+}
+
+.td-style{
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+
+.class-form-change{
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 2vw 4vw 60px 4vw;
+}
+
+form p{
+    font-size: 22px;
+
+}
+
+.message{
+    font-size: 17px;
+    color: green;
+}
+
+.main-content-change{
+    font-size: 1.2em;
+    background-color:  white;
+    padding: 4vw;
+    border-radius: 10px;
+
+}
+
+
+.label-input{
+    color: #000;
+    justify-content: left;
+}
+
+.input-employee{
+    font-size: auto;
+    max-width: 30vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+
+
+.btn-reset:hover  {
+    border: 2px solid #000;
+}
+
+.btn-submit{
+    font-size: 17px;
+    float: right;
+    margin: 10px;
+    margin-right: 50px;
+    border: 1px solid white;
+    background-color: #0097b2;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.btn-submit:hover {
+    border: 1px solid #000;
+}
+
+.btn-cancel{
+    font-size: 17px;
+    float: right;
+    margin-top: 11px;
+    margin-right: 20px;
+    border: 1px solid #000;
+    background-color: white;
+    color: #000;
+    width: 79px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+
+.btn-cancel:hover  {
+    border: 2px solid #000 ;
+}
+
+th{
+    text-align: left;
+    font-weight: normal;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,89 @@
+.app-main {
+  position: absolute;
+  width: 100%;
+}
+
+.view {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.user-icon {
+  /* Replace with actual user icon or image */
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.class-th, .class-td {
+  border: 1px solid #000000;
+  padding: 0.7vw;
+  text-align: left;
+  width: 80px;
+  
+}
+
+.class-action{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add-new-line-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+.add-new-line-btn{
+  display: inline-flex;
+  align-items: flex-end;
+  outline: none;
+  border: 0px;
+  background-color: #0097b2;
+  color: #fff;
+  border-radius: 10px;
+  padding: 7px 20px 7px 20px;
+}
+
+.icon-plush{
+  width: 25px;
+}
+
+.add-new-line-btn:hover {
+  
+  background-color: #1c8395;
+ 
+}
+
+.icon {
+  width: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.icon:hover{
+  color: #0097b2;
+}

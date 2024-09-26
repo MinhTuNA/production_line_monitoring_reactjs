@@ -1,0 +1,160 @@
+.chart-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.strong-style {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #001D61;
+    color: white;
+}
+
+.strong-style-actual {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #00CC33;
+    color: white;
+}
+
+
+
+.Value {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #000000;
+    justify-content: center;
+    /* Căn giữa nội dung nếu cần */
+    color: #001D61;
+    font-weight: bold;
+    margin-top: -1px;
+}
+
+
+.strong-style-diff {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #E9482B;
+    color: white;
+    margin-bottom: -1px;
+}
+
+.diff-positive {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    /* Đặt chiều rộng tự động để khớp với .strong-style */
+    padding: 10px;
+    border: 1px solid #000000;
+    justify-content: center;
+    color: green;
+    font-weight: bold;
+    /* Màu xanh cho giá trị lớn hơn 0 */
+}
+
+.diff-negative {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    /* Đặt chiều rộng tự động để khớp với .strong-style */
+    padding: 10px;
+    border: 1px solid #000000;
+    justify-content: center;
+    color: red;
+    font-weight: bold;
+    /* Màu đỏ cho giá trị bé hơn 0 */
+}
+
+.chart-heading{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.expand-icon{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 1px;
+}
+
+.setting-id-icon{
+    width: 19px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    
+}
+
+
+.expand-icon:hover{
+    border: 2px solid #000;
+}
+
+.setting-id-icon:hover{
+    
+    color: #0097b2;
+}
+
+.chart-container {
+    margin-top: 15px;
+    border: 5px solid #b7eb8f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.heading-chart{
+    display: flex;
+    align-items: center;
+}
+
+.action-camera{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.video-icon{
+    width: 19px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    
+}
+
+.video-icon:hover{
+    color: #0097b2;
+    
+}
