@@ -25,7 +25,7 @@ function PopupSettingId({ close, tableName }) {
     const fetchCameraId = async () => {
       try {
         const response = await getCameraId(tableName);
-        setId(response.data.id);
+        setId(response.data);
       } catch (err) {
         toast(err.response?.data?.error || "Lỗi khi lấy dữ liệu");
       }

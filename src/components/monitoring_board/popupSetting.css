@@ -48,9 +48,18 @@ form p{
 .label-input{
     color: #000;
     justify-content: left;
+    padding-top: 20px;
 }
 
 .input-target{
+    min-width: 130px;
+    font-size: 1em;
+    width: 30vw;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.input-camera-id{
     min-width: 130px;
     font-size: 1em;
     width: 30vw;
@@ -74,8 +83,14 @@ form p{
     font-size: 15px;
 }
 
+
 .btn-reset:hover  {
     border: 2px solid #000;
+}
+
+.auth-token{
+    width: 150px;
+    height: 43px;
 }
 
 .btn-submit-setting{
@@ -119,3 +134,9 @@ th{
     font-weight: normal;
     padding-bottom: 20px;
 }
+
+.id-auth-setting{
+    display: flex;
+    flex-direction: column;
+}
+

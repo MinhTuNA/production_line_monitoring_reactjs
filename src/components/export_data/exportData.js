@@ -54,7 +54,8 @@ function ExportData() {
           dateTimeStart,
           dateTimeEnd
         );
-        exportToExcel(response.data.data, "Data");
+        exportToExcel(response.data, "Data");
+        console.log(response.data)
       } catch (error) {
         localStorage.clear();
         navigate("/");

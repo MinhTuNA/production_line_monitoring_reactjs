@@ -45,8 +45,8 @@ function MonitoringBoard() {
   const handleClickType = async (tableName) => {
     try {
       let res = await getAuthToken(tableName);
-      copyToClipboard(res.data.token);
-      console.log(res.data.token)
+      copyToClipboard(res.data);
+      console.log(res.data)
     } catch (error) {
       console.log(error);
     }
@@ -71,11 +71,11 @@ function MonitoringBoard() {
       try {
         // Gọi API để lấy dữ liệu hiện tại
         const responseNow = await getDataNow(tables);
-        const fetchedDataNow = responseNow.data;
+        const fetchedDataNow = responseNow.data.data;
 
         // Gọi API để lấy dữ liệu theo ngày
         const responseDay = await getDataDay(tables);
-        const fetchedDataDay = responseDay.data;
+        const fetchedDataDay = responseDay.data.data;
 
         // Định dạng lại dữ liệu
         const formattedData = fetchedDataNow.map((tableNow) => {

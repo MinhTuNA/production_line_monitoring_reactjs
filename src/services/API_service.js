@@ -2,23 +2,21 @@
 import axiosInstance from "./axiosConfig"
 
 const getAllTables = () => {
-  return axiosInstance.get("/get_tables");
+  return axiosInstance.get("/api/v1/auth-db/table_names");
 }
 
 const createTable = (tableName) =>{
-  return axiosInstance.post("/create_table", {
-    tableName: tableName,
+  return axiosInstance.post("/api/v1/auth-db", {
+    table_name: tableName,
   });
 }
 
 const deleteTable = (tableName) =>{
-  return axiosInstance.post("/delete_table", {
-    tableName: tableName,
-  });
+  return axiosInstance.delete(`/api/v1/auth-db/${tableName}`);
 }
 
 const getAuthToken = (tableName) => {
-  return axiosInstance.get("/get_auth_token",
+  return axiosInstance.get("/api/v1/auth-db/auth_token",
     {
       params: { tableName: tableName }
     }
@@ -26,7 +24,7 @@ const getAuthToken = (tableName) => {
 }
 
 const getCameraId = (tableName) => {
-  return axiosInstance.get("/get_camera_id",
+  return axiosInstance.get("/api/v1/auth-db/id_camera",
     {
       params: { tableName: tableName }
     }
@@ -34,10 +32,10 @@ const getCameraId = (tableName) => {
 }
 
 const setCameraId = (tableName,id) => {
-  return axiosInstance.post("/set_camera_id",
+  return axiosInstance.post("/api/v1/auth-db/id_camera",
     {
-       tableName: tableName,
-       camera_id: id
+      tableName: tableName,
+      id_camera: id
     }
   );
 }
@@ -70,39 +68,34 @@ const changeEmployee = (employeeId,name,phoneNumber,email,role,password) => {
 };
 
 const getDataNow = (tableNames) => {
-  return axiosInstance.get("/get_data_now", {
+  return axiosInstance.get("/api/v1/auth-db/data/now", {
     params: { tableNames: tableNames }, 
   });
 };
 
 const getDataDay = (tableNames) => {
-  return axiosInstance.get("/get_data_day", {
+  return axiosInstance.get("/api/v1/auth-db/data/day", {
     params: { tableNames: tableNames }, 
   });
 };
 
 const getDataInRange = (tableName, dateTimeStart, dateTimeEnd) => {
-  return axiosInstance.get("/get_data_in_range", {
+  return axiosInstance.get("api/v1/auth-db/data/data_in_range", {
     params: {
       tableName: tableName,
-      startTime: dateTimeStart /*format(dateTimeStart, "yyyy-MM-dd HH:mm:ss")*/,
-      endTime: dateTimeEnd /*format(dateTimeEnd, "yyyy-MM-dd HH:mm:ss")*/,
+      fromDate: dateTimeStart /*format(dateTimeStart, "yyyy-MM-dd HH:mm:ss")*/,
+      toDate: dateTimeEnd /*format(dateTimeEnd, "yyyy-MM-dd HH:mm:ss")*/,
     },
   });
 };
 
 const sendTarget = (tableName, target) => {
   return axiosInstance.post(
-    "/send_target",
+    "/api/v1/auth-db/data/target",
     {
       tableName: tableName,
       target: parseInt(target, 10),
     },
-    {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
   );
 };
 

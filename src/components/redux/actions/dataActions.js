@@ -5,7 +5,7 @@ export const fetchTables = () => async (dispatch) => {
   dispatch(fetchTablesStart());
   try {
     const response = await getAllTables();
-    dispatch(fetchTablesSuccess(response.data.tables));
+    dispatch(fetchTablesSuccess(response.data));
   } catch (error) {
     dispatch(fetchTablesFailure(error.message));
   }

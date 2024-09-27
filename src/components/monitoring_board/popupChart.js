@@ -55,7 +55,7 @@ function ChartPopup({ close, tableName }) {
             dateTimeStart,
             dateTimeEnd
           );
-          setDatarcv(response.data.data);
+          setDatarcv(response.data);
         } catch (error) {
           console.error("Lỗi khi lấy dữ liệu:", error);
         }
@@ -71,14 +71,7 @@ function ChartPopup({ close, tableName }) {
     
     setDataChart(
       datarcv.map((item) => ({
-        Name: new Date(item.Time).toLocaleString("en-GB", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit",
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false,
-        }),
+        Name: new Date(item.Time),
         Time: new Date(item.Time),
         Actual: item.Actual ?? 0, // Đặt giá trị mặc định là 0 nếu Actual là null
         Target: item.Target ?? 0, // Đặt giá trị mặc định là 0 nếu Target là null

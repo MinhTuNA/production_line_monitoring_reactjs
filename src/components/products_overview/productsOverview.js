@@ -42,10 +42,9 @@ function ProductsOverview() {
   useEffect(() => {
     const fetchData = async () => {
       if (tables.length === 0) return;
-
       try {
         const response = await getDataNow(tables);
-        const fetchedData = response.data;
+        const fetchedData = response.data.data;
         const formattedData = fetchedData.map((table) => {
           const targetValue = table.data.reduce(
             (acc, item) => acc + (item.Target || 0),
